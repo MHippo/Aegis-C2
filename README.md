@@ -6,13 +6,13 @@
 ## Project Structure
 ```
 Aegis-C2/
-└── Teamserver			#http(s) server for aegis
-	│		
+└── Core				# shared resources between multiple parts like payload server etc
+	│	
 	└── 
 ```
 ---
 ## Stack
-|         Server       |
+### server
 | Component |  Choice  |
 |-----------|----------|
 

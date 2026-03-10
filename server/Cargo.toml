@@ -1,0 +1,49 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+# ─── Web Framework ───────────────────────────────────────────
+actix = "0.13.5"
+actix-rt = "2.11.0"
+actix-web = "4.13.0"
+
+# ─── Async & Concurrency ─────────────────────────────────────
+tokio = "1.50.0"
+tokio-stream = "0.1.18"
+futures = "0.3.32"
+dashmap = "6.1.0"
+parking_lot = "0.12.5"
+
+# ─── Serialization ───────────────────────────────────────────
+serde = {version = "1.0.228", features = ["derive"] }
+base64 = "0.22.1"
+hex = "0.4.3"
+bytes = "1.11.1"
+
+
+# ─── Database ────────────────────────────────────────────────
+sea-orm = { version = "2.0.0-rc", features = [ "sqlx-sqlite", "runtime-tokio-native-tls", "macros" , "with-chrono", "with-json", "with-uuid"] }
+
+
+# ─── Scripting (PyO3) ────────────────────────────────────────
+pyo3 = "0.28.2"
+notify = "8.2.0"
+
+# ─── Cryptography ────────────────────────────────────────────
+zeroize = "1.8.2"
+
+# ─── Identity & Auth ─────────────────────────────────────────
+uuid             = { version = "1", features = ["v4", "serde"] }
+argon2           = "0.5"
+
+# ─── Configuration ───────────────────────────────────────────
+config = "0.15.19"
+dotenvy = "0.15.7"
+
+# ─── Internal -----───────────────────────────────────────────
+aegis-shell = { path = "./internal/aegis-shell" }
+
+
