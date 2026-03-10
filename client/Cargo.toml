@@ -1,0 +1,76 @@
+[package]
+name = "client"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+
+# ─── GUI Framework ───────────────────────────────────────────
+egui             = "0.33.3"
+eframe           = "0.33.3"
+egui_dock        = "0.18.0"
+egui_extras      = "0.33.3"
+egui-snarl       = "0.9.0"
+egui_graph       = "0.12.0"
+egui-notify      = "0.21.0"
+egui_tracing     = "0.2.6"
+egui_code_editor = "0.2.21"
+
+# ─── Terminal Emulator ───────────────────────────────────────
+alacritty_terminal = "0.25.1"
+portable-pty     = "0.9.0"
+vte              = "0.15.0"
+anstyle = "1.0.13"
+anstyle-parse = "1.0.0"
+strip-ansi-escapes = "0.2.1"
+circular-buffer  = "1.2.0"
+
+# ─── Async & Runtime ─────────────────────────────────────────
+tokio            = "1.50.0"
+futures          = "0.3.32"
+
+# ─── HTTP & WebSocket ────────────────────────────────────────
+reqwest          = "0.13.2"
+tokio-tungstenite = "0.28.0"
+
+# ─── Serialization ───────────────────────────────────────────
+serde            = "1.0.228"
+serde_json       = "1.0.149"
+toml             = "0.9.8"
+
+# ─── State Management ────────────────────────────────────────
+dashmap          = "6.1.0"
+parking_lot      = "0.12.5"
+once_cell        = "1.21.3"
+
+# ─── Auth & Identity ─────────────────────────────────────────
+keyring          = "3.6.3"
+uuid             = "1.22.0"
+
+# ─── Configuration ───────────────────────────────────────────
+config           = "0.15.19"
+dotenvy          = "0.15.7"
+dirs             = "6.0.0"
+
+# ─── Logging & Tracing ───────────────────────────────────────
+tracing          = "0.1.44"
+tracing-subscriber = "0.3.22"
+tracing-egui     = "0.1.0"
+
+# ─── Error Handling ──────────────────────────────────────────
+thiserror        = "2.0.18"
+anyhow           = "1.0.102"
+
+# ─── Time ────────────────────────────────────────────────────
+chrono           = "0.4.44"
+chrono-humanize  = "0.2.3"
+
+# ─── Image & Syntax ──────────────────────────────────────────
+image            = "0.25.9"
+syntect          = "5.3.0"
+
+# ─── Utilities ───────────────────────────────────────────────
+strum            = "0.28.0"
+bytesize         = "2.3.1"
+arboard          = "3.6.1"
+open             = "5.3.3"
