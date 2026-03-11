@@ -1,11 +1,11 @@
-# Aegis-C2# Aegis-C2
+# Argus-C2
 ## A post exploitation redteam framework. 
 ### "Rat so good it make you wanna hack yo mama!"
 ---
 
 ## Project Structure
 ```
-Aegis-C2/
+Argus-C2/
 └── Core				# shared resources between multiple parts like payload server etc
 	│	
 	└── 
