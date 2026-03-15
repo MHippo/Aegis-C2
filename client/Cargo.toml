@@ -7,7 +7,7 @@ edition = "2024"
 
 # ─── GUI Framework ───────────────────────────────────────────
 egui             = "0.33.3"
-eframe           = "0.33.3"
+eframe           = {version = "0.33.3", features = ["default"]}
 egui_dock        = "0.18.0"
 egui_extras      = "0.33.3"
 egui-snarl       = "0.9.0"
@@ -15,6 +15,7 @@ egui_graph       = "0.12.0"
 egui-notify      = "0.21.0"
 egui_tracing     = "0.2.6"
 egui_code_editor = "0.2.21"
+
 
 # ─── Terminal Emulator ───────────────────────────────────────
 alacritty_terminal = "0.25.1"
@@ -51,6 +52,7 @@ uuid             = "1.22.0"
 config           = "0.15.19"
 dotenvy          = "0.15.7"
 dirs             = "6.0.0"
+env_logger = {version = "0.11.9", features = ["auto-color", "humantime"]}
 
 # ─── Logging & Tracing ───────────────────────────────────────
 tracing          = "0.1.44"

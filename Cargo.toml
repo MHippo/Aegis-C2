@@ -2,7 +2,7 @@
 members = [
 	"client",
 	"server",
-	"server/internal/aegis-shell"
+	"server/internal/argus-shell"
 ]
 resolver = "2"
 
